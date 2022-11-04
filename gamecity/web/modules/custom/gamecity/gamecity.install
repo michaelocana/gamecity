@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the sendsmaily module.
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function gamecity_install() {
+  $vid = "category";
+  $categories = ['Action', 'Arcade', 'Puzzle'];
+
+  foreach ($categories as $category) {
+  $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->create([
+    'name' => $category,
+    'vid' => $vid,
+  ])->save();
+  }
+}

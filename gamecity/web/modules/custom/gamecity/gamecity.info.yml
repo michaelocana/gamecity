@@ -1,0 +1,8 @@
+name: Game City Custom Module
+type: module
+description: 'Game City'
+core: 8.x
+core_version_requirement: ^8 || ^9
+version: VERSION
+package: 'Game City'
+
