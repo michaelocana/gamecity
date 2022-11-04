@@ -1,0 +1,45 @@
+uuid: ea33b001-4345-47ba-bb47-a75949886759
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.games.body
+    - field.field.node.games.field_category
+    - field.field.node.games.field_description
+    - node.type.games
+  module:
+    - text
+    - user
+id: node.games.default
+targetEntityType: node
+bundle: games
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
