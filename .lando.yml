@@ -1,4 +1,7 @@
 name: gamecity
 recipe: drupal9
 config:
+  php: '8.0'
+  via: apache
   webroot: gamecity/web
+  database: mariadb
