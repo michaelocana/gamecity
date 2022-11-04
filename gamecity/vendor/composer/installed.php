@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '7b7e7aad1d8b6713ccd2a6dd574c79bb4708635b',
+        'reference' => '6438f7495fb46324ac63a7614c0419b0468baac7',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -358,13 +358,31 @@
                 0 => '9.4.8',
             ),
         ),
+        'drupal/hal' => array(
+            'pretty_version' => '1.0.3',
+            'version' => '1.0.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/hal',
+            'aliases' => array(),
+            'reference' => '1.0.3',
+            'dev_requirement' => false,
+        ),
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '7b7e7aad1d8b6713ccd2a6dd574c79bb4708635b',
+            'reference' => '6438f7495fb46324ac63a7614c0419b0468baac7',
+            'dev_requirement' => false,
+        ),
+        'drupal/restui' => array(
+            'pretty_version' => '1.21.0',
+            'version' => '1.21.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/restui',
+            'aliases' => array(),
+            'reference' => '8.x-1.21',
             'dev_requirement' => false,
         ),
         'drush/drush' => array(
@@ -565,8 +583,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.0',
             ),
         ),
         'psr/event-dispatcher-implementation' => array(
