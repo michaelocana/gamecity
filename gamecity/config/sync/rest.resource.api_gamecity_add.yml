@@ -1,15 +1,13 @@
-uuid: 6f19ae32-71bd-4799-9214-d13b21213977
+uuid: 1cd5d534-1b0a-4efa-be85-e3e7f5dd60be
 langcode: en
 status: true
 dependencies:
   module:
-    - node
+    - gamecity
     - serialization
     - user
-_core:
-  default_config_hash: t_jfECmZhJqBOJuSOFn87EOi_TWi-_fRYTuJgd19vgg
-id: entity.node
-plugin_id: 'entity:node'
+id: api_gamecity_add
+plugin_id: api_gamecity_add
 granularity: resource
 configuration:
   methods:

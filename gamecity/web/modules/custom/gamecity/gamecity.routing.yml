@@ -1,0 +1,7 @@
+gamecity.admin_gamecity_settings:
+  path: '/admin/gamecity/api/settings'
+  defaults:
+    _title: 'Gamecity API settings'
+    _form: 'Drupal\gamecity\Form\SettingsForm'
+  requirements:
+    _permission: 'access administration pages'

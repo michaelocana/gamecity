@@ -1,0 +1,5 @@
+gamecity.admin_gamecity_settings:
+  title: 'Gamecity API settings'
+  description: 'General options and settings related to APIs.'
+  route_name: gamecity.admin_gamecity_settings
+  parent: system.admin_config
