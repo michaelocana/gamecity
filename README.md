@@ -42,6 +42,12 @@ $ lando start
 $ cd gamecity.local/gamecity
 $ lando db-import dump/gamecity.sql
 ```
+### Drupal admin account
+```sh
+username: gamecity
+password : drupalAdm1n
+``` 
+
 ### Build project
 ``` sh
 $ lando drush cr
@@ -53,7 +59,23 @@ $ lando drush cr
 ``` sh
 Open browser: http://gamecity.lndo.site/
 ```
+### API Endpoints get the games listing
+``` sh
+* API to query games 
 
+/api/v1/gamecity
+
+parameters: category=[puzzle/arcade,action,all]
+```
+### API Endpoints to add games
+``` sh
+/api/v1/gamecity/add/game
+
+parameters :
+_format=json
+Content-type=application/json
+data=["title" => "value", "description => "description", "category" => "puzzle"]
+```
 ### 1.2.1 Games API Query
 ``` sh
 
